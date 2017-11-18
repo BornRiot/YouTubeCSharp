@@ -9,6 +9,7 @@ using projectA.TeamA;
 namespace YouTubeCSharp
 {
     class Program
+    //Static variables are allocated for the lifetime of the program
     {
         public static void Main(string[] args)
         {
@@ -51,16 +52,30 @@ namespace YouTubeCSharp
             //Reference from Team D
             ProjectA.TeamD.A.Print();
 
-
             //Demonstrates the use of the Customer class
             Console.Write("What is your frist name:");
             string takeFName = Console.ReadLine();
-
+        
             Console.Write("What is your last name:");
             string takeLName = Console.ReadLine();
             Customer c1 = new Customer(takeFName,takeLName);
             c1.printName();
+
+
+            //Demonstrates the use of the circle class
+            Circle c2 = new Circle(5); //Circle takes an arugment if 5
+            float Area1 = c2.CalculateArea();
+            Console.WriteLine("The area of the circle is {0}", Area1);
+
+            Circle c3 = new Circle(6);
+            float Area2 = c3.CalculateArea();
+            Console.WriteLine("The area of the circle is {0}", Area2);
+            Circle.Print(); // Uses Curcle object reference to call Print method
+
             Console.ReadKey();
+
+
+            
         }
     }
 }

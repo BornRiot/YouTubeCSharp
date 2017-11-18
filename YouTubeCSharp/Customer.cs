@@ -17,14 +17,14 @@ namespace YouTubeCSharp
 
         public Customer(string firstName, string lastName)
         {
-            this.firstName= firstName;
+            this.firstName = firstName;
             this.lastName = lastName;
         }
 
         public void printName()
         {
             Console.WriteLine("{0}, {1}",firstName, lastName);
-
+           
         }
         //Deconstructor method used to clean up codeMet
         ~Customer()
