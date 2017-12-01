@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="YouTubeCSharp.BaseClass">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>BaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.DerivedClass">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>BaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.C_Structs">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="YouTubeCSharp.C_Structs.Customer">
+        <TypeIdentifier>
+          <NewMemberFileName>C_Structs.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C_Structs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Circle">
+    <Position X="3.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAACEAAA=</HashCode>
+      <FileName>Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Clss_StructsComp">
+    <Position X="7" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="YouTubeCSharp.Clss_StructsComp.Customer">
+        <TypeIdentifier>
+          <NewMemberFileName>Clss_StructsComp.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clss_StructsComp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Customer">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAABBAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Employee">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="YouTubeCSharp.Employee.FullTimeEmployee" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Employee.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="YouTubeCSharp.Employee.partTimeEmployee" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Employee.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="YouTubeCSharp.Employee.A" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Employee.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAgAAAgAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Employee2">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="YouTubeCSharp.Employee2.FullTimeEmployee">
+        <TypeIdentifier>
+          <NewMemberFileName>Employee2.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="YouTubeCSharp.Employee2.PartTimeEmployee">
+        <TypeIdentifier>
+          <NewMemberFileName>Employee2.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Employee2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Employee3">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="YouTubeCSharp.Employee3.PartTimeEmployee" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Employee3.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="YouTubeCSharp.Employee3.FullTimeEwmployee" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Employee3.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="YouTubeCSharp.Employee3.TemporaryEmployee" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Employee3.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Employee3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.ExplicitInterfaces">
+    <Position X="9.25" Y="10" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Interface Name="YouTubeCSharp.ExplicitInterfaces.I1">
+        <TypeIdentifier>
+          <NewMemberFileName>ExplicitInterfaces.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Interface Name="YouTubeCSharp.ExplicitInterfaces.I2">
+        <TypeIdentifier>
+          <NewMemberFileName>ExplicitInterfaces.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExplicitInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Interface_C">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Interface Name="YouTubeCSharp.Interface_C.ICustomer">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface_C.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Interface Name="YouTubeCSharp.Interface_C.ICustomer2">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface_C.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="YouTubeCSharp.Interface_C.Customer">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface_C.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface_C.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Method_Overloading">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Method_Overloading.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Method_Parameters">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAQAAAAAAAEAEAAAA=</HashCode>
+      <FileName>Method_Parameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.NamespaceTutorial">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NamespaceTutorial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Parent">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="YouTubeCSharp.Parent.ChildClass">
+        <TypeIdentifier>
+          <NewMemberFileName>Parent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Program" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YouTubeCSharp.Properties">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="YouTubeCSharp.Properties.PvtStudent">
+        <TypeIdentifier>
+          <NewMemberFileName>Properties.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Properties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YouTubeCSharp.Why_Properties">
+    <Position X="4.5" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="YouTubeCSharp.Why_Properties.Student">
+        <TypeIdentifier>
+          <NewMemberFileName>Why_Properties.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="YouTubeCSharp.Why_Properties.PvtStudent">
+        <TypeIdentifier>
+          <NewMemberFileName>Why_Properties.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Why_Properties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="projectA.TeamA.A">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>NamespaceTutorial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="projectA.TeamB.A">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>NamespaceTutorial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Times New Roman" Size="10" />
+</ClassDiagram>

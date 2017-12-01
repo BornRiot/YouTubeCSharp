@@ -9,17 +9,36 @@ namespace YouTubeCSharp
     class Employee
     {
         
-        string Fname;
-        string Lname;
-        string email;
+        public string Fname;
+        public string Lname;
+         public string email;
 
-        public void PrintFullName(string _FName, string _LName)
+        public void PrintFullName()
         {
-            this.Lname = _LName;
-            this.Fname = _FName;
-
-            Console.WriteLine("");
+            
+            Console.WriteLine(Fname);
+            Console.WriteLine(Lname);
+            
         }
-         
+
+        public class FullTimeEmployee : Employee
+        {
+            public float yearlySalary;
+
+        }
+
+        public class partTimeEmployee : Employee
+        {
+            public float hourlyRate;
+
+        }
+
+        
+        public class A : FullTimeEmployee
+        {
+     
+        }
+
+
     }
 }

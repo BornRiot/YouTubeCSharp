@@ -60,16 +60,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract_Class.cs" />
+    <Compile Include="BaseClass.cs" />
     <Compile Include="Circle.cs" />
+    <Compile Include="Clss_StructsComp.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="C_Structs.cs" />
+    <Compile Include="Delegates.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Employee2.cs" />
+    <Compile Include="Employee3.cs" />
+    <Compile Include="ExplicitInterfaces.cs" />
+    <Compile Include="Interface_C.cs" />
+    <Compile Include="Method_Overloading.cs" />
     <Compile Include="Method_Parameters.cs" />
+    <Compile Include="Multi_Class_Inherit.cs" />
     <Compile Include="NamespaceTutorial.cs" />
+    <Compile Include="Parent.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Why_Properties.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram3.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjectA.TeamC\ProjectA.TeamC.csproj">
