@@ -211,6 +211,8 @@ namespace YouTubeCSharp
             Delegates.HelloFunctionDelegate del = new Delegates.HelloFunctionDelegate(Delegates.hello);
             del("Hello");
 
+            Console.WriteLine("This was created in and to test VS Code");
+
 
             Console.ReadKey();
 
