@@ -214,6 +214,7 @@ namespace YouTubeCSharp
             Console.WriteLine("This was created in and to test VS Code");
             Console.WriteLine("This was never here");
             Console.WriteLine("Check it out");
+            Console.WriteLine("this was fun");
 
             Console.ReadKey();
 
