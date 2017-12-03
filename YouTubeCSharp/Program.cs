@@ -8,7 +8,9 @@ using projectA.TeamA;
 // Example using PATA = ProjectA.TeamA;
 namespace YouTubeCSharp
 {
-    
+    public delegate void SampleDelegate();
+    public delegate int SampleReturnDelegate();
+
     public class Program : Abstract_Class.Customer, ExplicitInterfaces.I1, ExplicitInterfaces.I2
     //Static variables are allocated for the lifetime of the program
     {
@@ -61,7 +63,6 @@ namespace YouTubeCSharp
             string takeLName = Console.ReadLine();
             Customer c1 = new Customer(takeFName, takeLName);
             c1.printName();
-
 
             //Demonstrates the use of the circle class
             Circle c2 = new Circle(5); //Circle takes an arugment if 5
@@ -211,17 +212,88 @@ namespace YouTubeCSharp
             Delegates.HelloFunctionDelegate del = new Delegates.HelloFunctionDelegate(Delegates.hello);
             del("Hello");
 
-            Console.WriteLine("This was created in and to test VS Code");
-            Console.WriteLine("This was never here");
-            Console.WriteLine("Check it out");
-            Console.WriteLine("this was fun");
 
-            Console.ReadKey();
+            //The following code correspond to the Delegates Usage Class and viseo
+            List<DelegateUsage.Employee> empList = new List<DelegateUsage.Employee>();
+            empList.Add(new DelegateUsage.Employee() {ID = 101, Name = "Mary", Salary = 5000, Experience = 5});
+            DelegateUsage.PromoteEmployee(empList);
+
+            //part two of the delgates videos using updated method
+            List<DelegateUsage2.Employee> empList2 = new List<DelegateUsage2.Employee>();
+            empList2.Add(new DelegateUsage2.Employee() { ID = 101, Name = "Mary", Salary = 5000, Experience = 5 });
+            DelegateUsage2.IsPromotable Ispromote = new DelegateUsage2.IsPromotable(Promote);
+            DelegateUsage2.PromoteEmployee(empList2, Ispromote);
+
+
+            //Use of MultiCast Delegates
+            //A delegate pointing to more than 1 function is a mukticast delegate
+        SampleDelegate del1, del2, del3, del4;
+       del1 = new SampleDelegate(SampleDelegateOne);
+        del2 = new SampleDelegate(SampleDelegateTwo);
+        del3 = new SampleDelegate(SampleDelegateThree);
+        del4 = del1 + del2 + del3; // You can remve a delegate by using the - sgn to take a delgate away
+        del4 -= del2;
+        del4();
+            //Another way assigning delegates
+            SampleDelegate del0 = new SampleDelegate(SampleDelegateOne);
+            del0 += SampleDelegateTwo;
+
+            //Assigbnmethods with return values for delegates
+            //Go over the last 5 mins of video
+            SampleReturnDelegate del7 = new SampleReturnDelegate(SampleDelegateSIx);
+            del7 += SampleDelegateZero;
+            Console.WriteLine("This is a test Line");
+            Console.WriteLine("this was done in Visual Studio Code");
+            Console.WriteLine("Yo");
+            
+
+
+        
+
+        Console.ReadKey();
 
            
 
         }
+        public static int SampleDelegateZero()
+        {
+            return 0;
+        }
+        public static void SampleDelegateOne()
+        {
+            Console.WriteLine("SampleMethodOne Invoked");
 
+        }
+
+        public static void SampleDelegateTwo()
+        {
+            Console.WriteLine("SampleMethodTwo Invoked");
+
+        }
+
+        public static void SampleDelegateThree()
+        {
+            Console.WriteLine("SampleMethodThree Invoked");
+
+        }
+
+        public static void SampleDelegateFour()
+        {
+            Console.WriteLine("SampleMethodFour Invoked");
+        }
+
+        public static int SampleDelegateSIx()
+        {
+            return 6;
+        }
+        public static bool Promote(DelegateUsage2.Employee emp)
+        {
+            if (emp.Experience >= 5)
+            {
+                return true;
+            }
+            else { return false; }
+        }
         public override void Print()
         {
             Console.WriteLine("This is a print methods");
