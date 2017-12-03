@@ -246,6 +246,8 @@ namespace YouTubeCSharp
             Console.WriteLine("this was done in Visual Studio Code");
             Console.WriteLine("Yo");
             Console.WriteLine("Hi");
+            Console.WriteLine("This is also a tes line ");
+            Console.WriteLine("Hi there how are you?");
             
 
 
