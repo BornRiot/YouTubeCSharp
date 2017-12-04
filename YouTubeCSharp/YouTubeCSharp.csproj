@@ -67,6 +67,7 @@
     <Compile Include="Customer.cs" />
     <Compile Include="C_Structs.cs" />
     <Compile Include="Delegates.cs" />
+    <Compile Include="DelegateUsage2.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Employee2.cs" />
     <Compile Include="Employee3.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Multi_Class_Inherit.cs" />
     <Compile Include="NamespaceTutorial.cs" />
     <Compile Include="Parent.cs" />
+    <Compile Include="DelegateUsage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
