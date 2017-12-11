@@ -71,7 +71,9 @@
     <Compile Include="Employee.cs" />
     <Compile Include="Employee2.cs" />
     <Compile Include="Employee3.cs" />
+    <Compile Include="ExceptionHandling.cs" />
     <Compile Include="ExplicitInterfaces.cs" />
+    <Compile Include="InnerExceptions.cs" />
     <Compile Include="Interface_C.cs" />
     <Compile Include="Method_Overloading.cs" />
     <Compile Include="Method_Parameters.cs" />

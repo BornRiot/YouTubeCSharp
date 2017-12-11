@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using projectA.TeamA;
+using System.IO;
 // Aliases can be used to reference namespaces
 // Example using PATA = ProjectA.TeamA;
 namespace YouTubeCSharp
@@ -242,13 +243,15 @@ namespace YouTubeCSharp
             //Go over the last 5 mins of video
             SampleReturnDelegate del7 = new SampleReturnDelegate(SampleDelegateSIx);
             del7 += SampleDelegateZero;
-            Console.WriteLine("This is a test Line");
-            Console.WriteLine("this was done in Visual Studio Code");
-            Console.WriteLine("Yo");
-            Console.WriteLine("Hi");
-            Console.WriteLine("This is also a tes line ");
-            Console.WriteLine("Hi there how are you?");
             
+            //Output of lecture 40 program
+            ExceptionHandling testExcept = new ExceptionHandling();
+            testExcept.DisplayStuff();
+
+            //Output of lecture video 41
+            //Go over inner exception from another resource
+            InnerExceptions displayInner = new InnerExceptions();
+            displayInner.getInnerExcept();
 
 
         
@@ -261,7 +264,11 @@ namespace YouTubeCSharp
         public static int SampleDelegateZero()
         {
             return 0;
+            
         }
+       
+
+
         public static void SampleDelegateOne()
         {
             Console.WriteLine("SampleMethodOne Invoked");
