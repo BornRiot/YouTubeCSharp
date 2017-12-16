@@ -7,7 +7,7 @@ using System.IO;
 
 namespace YouTubeCSharp
 {
-    class ExceptionHandling
+    public class ExceptionHandling
     {
         public void DisplayStuff()
         {
@@ -16,7 +16,7 @@ namespace YouTubeCSharp
 
             try
             {//Pertains to lecture 40
-                 myReader = new StreamReader(@"C:\Users\javvytech\Desktop\MJavvy Testing\TutorialFiles\myDoc.txt");
+                 myReader = new StreamReader(@"C:\Users\Marvin\Desktop\TubeCSharpFiles\myDoc.txt");
                 Console.WriteLine(myReader.ReadToEnd());
               
             }

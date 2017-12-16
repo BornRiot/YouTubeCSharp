@@ -24,11 +24,11 @@ namespace YouTubeCSharp
                     Console.WriteLine("Result is:{0}", Result);
                 }
                 catch (Exception ex1)
-                { string filePath = @"C:\Users\javvytech\Desktop\MJavvy Testing\TutorialFiles\Log29.txt";
+                { string filePath = @"C:\Users\Marvin\Desktop\TubeCSharpFiles\Log29.txt";
                     StreamWriter sw = new StreamWriter(filePath);
 
-                    if (File.Exists(filePath))
-                    {
+                        if (File.Exists(filePath))
+                        {
                         sw.Write(ex1.GetType().Name);
                         sw.WriteLine();
                         sw.Write(ex1.Message);
@@ -36,10 +36,10 @@ namespace YouTubeCSharp
                         Console.WriteLine("There is a problem. Please try again later");
                         Console.WriteLine(ex1.Message);
                         Console.WriteLine(ex1.StackTrace);
-                    }
-                    else {
+                        }
+                        else {
                         throw new FileNotFoundException(filePath + "is not present", ex1);
-                    } }
+                        } }
                 
             }
             catch (Exception exceptThis){

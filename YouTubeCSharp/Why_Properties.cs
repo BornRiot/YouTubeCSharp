@@ -30,7 +30,7 @@ namespace YouTubeCSharp
                 }
                 this._ID = ID;
             }
-            public int SetID()
+            public int getID()
             {
                 return this._ID;
 
