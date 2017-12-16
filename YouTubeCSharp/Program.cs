@@ -243,9 +243,9 @@ namespace YouTubeCSharp
             //Go over the last 5 mins of video
             SampleReturnDelegate del7 = new SampleReturnDelegate(SampleDelegateSIx);
             del7 += SampleDelegateZero;
-            
+
             //Output of lecture 40 program
-            ExceptionHandling testExcept = new ExceptionHandling();
+           ExceptionHandling testExcept = new ExceptionHandling();
             testExcept.DisplayStuff();
 
             //Output of lecture video 41
@@ -253,8 +253,10 @@ namespace YouTubeCSharp
             InnerExceptions displayInner = new InnerExceptions();
             displayInner.getInnerExcept();
 
+    
 
-        
+
+
 
         Console.ReadKey();
 
