@@ -50,7 +50,7 @@ namespace YouTubeCSharp
             //Using fully qualified name to envoke Print Method for Team  B
             projectA.TeamB.A.Print();
 
-            //Using Prohject Reference to call methods from Team C & D
+            //Using Project Reference to call methods from Team C & D
             //Reference from Team C
             ProjectA.TeamC.A.Print();
             //Reference from Team D
@@ -139,7 +139,7 @@ namespace YouTubeCSharp
 
             Console.WriteLine("Student {0} name is {1}", C9.setID, C9.setName);
 
-            //Proint an example from the C_Structs class
+            //Print an example from the C_Structs class
             C_Structs.Customer nyCust = new C_Structs.Customer("Mark", 101); //intialize though fields   
             nyCust.PrntInfo();
 
@@ -175,7 +175,7 @@ namespace YouTubeCSharp
             u = u + 1;
             Console.WriteLine("u = {0}, && and y = {1}", u, y);
 
-            //Illlustrates the use of objrcrt referrence value strage
+            //Illlustrates the use of objectt referrence value strage
             Clss_StructsComp.Customer theCust = new Clss_StructsComp.Customer();
             theCust.Id = 101;
             theCust.Name = "Mike";
@@ -194,7 +194,7 @@ namespace YouTubeCSharp
             Interface_C.ICustomer2 mw = new Interface_C.Customer();
             mw.print2();
             //Explicit interface implementation
-            //There was more infor to go over on this lecture (rewatcxh)
+            //There was more info to go over on this lecture (rewatch)
             Program P = new Program();
             ((ExplicitInterfaces.I1)P).InterFaceMethod();
            
@@ -306,7 +306,7 @@ namespace YouTubeCSharp
         }
         public override void Print()
         {
-            Console.WriteLine("This is a print methods");
+            Console.WriteLine("This is a print method");
         }
 
         void ExplicitInterfaces.I1.InterFaceMethod()
