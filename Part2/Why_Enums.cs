@@ -35,14 +35,6 @@ namespace Part2
         {
             return this._gender;
         }
-
-
-
-
     }
     
 }
-
-     
-
-
