@@ -203,6 +203,8 @@ namespace Part2
             Console.WriteLine(mySung.ToString());
             //String Builder offers better performaance for heavy string manipulation due to not storing objects on the heap
 
+            Console.WriteLine("This is a test line to write stuff");
+
 
             Console.ReadKey();
 
