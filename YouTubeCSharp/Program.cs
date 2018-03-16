@@ -15,6 +15,7 @@ namespace YouTubeCSharp
     public class Program : Abstract_Class.Customer, ExplicitInterfaces.I1, ExplicitInterfaces.I2
     //Static variables are allocated for the lifetime of the program
     {
+        
         public static void Main(string[] args)
         {
             // illustrates the use of pass by value method
@@ -75,10 +76,12 @@ namespace YouTubeCSharp
             Console.WriteLine("The area of the circle is {0}", Area2);
             Circle.Print(); // Uses Curcle object reference to call Print method
 
-            Employee.FullTimeEmployee FTE = new Employee.FullTimeEmployee();
-            FTE.Fname = "Marvin";
-            FTE.Lname = "DaCosta";
-            FTE.yearlySalary = 20000.36F;
+            Employee.FullTimeEmployee FTE = new Employee.FullTimeEmployee
+            {
+                Fname = "Marvin",
+                Lname = "DaCosta",
+                yearlySalary = 20000.36F
+            };
             FTE.PrintFullName();
             Console.WriteLine("Salary is " + FTE.yearlySalary);
             //You can use multi-level inheritance in C# to reference porperties of bases classes
@@ -89,19 +92,25 @@ namespace YouTubeCSharp
             Parent.ChildClass CC = new Parent.ChildClass();
 
             //
-            Employee2.FullTimeEmployee E2FTE = new Employee2.FullTimeEmployee();
-            E2FTE.firstName = ("Mikle");
-            E2FTE.LastName = ("Jack");
+            Employee2.FullTimeEmployee E2FTE = new Employee2.FullTimeEmployee
+            {
+                firstName = ("Mikle"),
+                LastName = ("Jack")
+            };
             E2FTE.PrintFullName();
 
-            Employee2.PartTimeEmployee E2PTE = new Employee2.PartTimeEmployee();
-            E2PTE.firstName = ("Mark");
-            E2PTE.LastName = ("Jackson");
+            Employee2.PartTimeEmployee E2PTE = new Employee2.PartTimeEmployee
+            {
+                firstName = ("Mark"),
+                LastName = ("Jackson")
+            };
             E2PTE.PrintFullName(); //Another way of using the base class method
 
-            Employee2.PartTimeEmployee E2PTE1 = new Employee2.PartTimeEmployee();
-            E2PTE1.firstName = ("Mark");
-            E2PTE1.LastName = ("Jackson");
+            Employee2.PartTimeEmployee E2PTE1 = new Employee2.PartTimeEmployee
+            {
+                firstName = ("Mark"),
+                LastName = ("Jackson")
+            };
             E2PTE1.PrintFullName(); //Another way of using the base class method
 
             //Write out Part 23 of video series
@@ -123,19 +132,23 @@ namespace YouTubeCSharp
             B.Print();
             B.Print1();
 
-            Why_Properties.Student C1 = new Why_Properties.Student();
-            C1.ID = -101; //Should not be able to edit variables
-            C1.Name = null;
-            C1.Passark = 0;
+            Why_Properties.Student C1 = new Why_Properties.Student
+            {
+                ID = -101, //Should not be able to edit variables
+                Name = null,
+                Passark = 0
+            };
 
             //Using private student class with get and set methods
             Why_Properties.PvtStudent C2 = new Why_Properties.PvtStudent();
             C2.SetId(1101);
 
             //Why properties class redone with built in C# get and set fuctions
-            Properties.PvtStudent C9 = new Properties.PvtStudent();
-            C9.setID = 41;
-            C9.setName = "Marvin";
+            Properties.PvtStudent C9 = new Properties.PvtStudent
+            {
+                setID = 41,
+                setName = "Marvin"
+            };
 
             Console.WriteLine("Student {0} name is {1}", C9.setID, C9.setName);
 
@@ -143,10 +156,12 @@ namespace YouTubeCSharp
             C_Structs.Customer nyCust = new C_Structs.Customer("Mark", 101); //intialize though fields   
             nyCust.PrntInfo();
 
-            C_Structs.Customer thisCust = new C_Structs.Customer();
-            //Initialize through public fields
-            thisCust.Id = 103;
-            thisCust.Name = "Montez";
+            C_Structs.Customer thisCust = new C_Structs.Customer
+            {
+                //Initialize through public fields
+                Id = 103,
+                Name = "Montez"
+            };
             thisCust.PrntInfo();
 
             //Using object initializer syntax
@@ -164,9 +179,11 @@ namespace YouTubeCSharp
             if(z == 10)
             {
                 int j = 20;
-                Clss_StructsComp.Customer newC = new Clss_StructsComp.Customer();
-                newC.Id = 101;
-                newC.Name = "Mark";
+                Clss_StructsComp.Customer newC = new Clss_StructsComp.Customer
+                {
+                    Id = 101,
+                    Name = "Mark"
+                };
 
             }
 
@@ -176,9 +193,11 @@ namespace YouTubeCSharp
             Console.WriteLine("u = {0}, && and y = {1}", u, y);
 
             //Illlustrates the use of objectt referrence value strage
-            Clss_StructsComp.Customer theCust = new Clss_StructsComp.Customer();
-            theCust.Id = 101;
-            theCust.Name = "Mike";
+            Clss_StructsComp.Customer theCust = new Clss_StructsComp.Customer
+            {
+                Id = 101,
+                Name = "Mike"
+            };
 
             Clss_StructsComp.Customer theCust2 = theCust;
             theCust2.Name = "Mickey";
@@ -197,8 +216,9 @@ namespace YouTubeCSharp
             //There was more info to go over on this lecture (rewatch)
             Program P = new Program();
             ((ExplicitInterfaces.I1)P).InterFaceMethod();
-           
 
+
+           
             Abstract_Class.Customer UY = new Program();
             UY.Print();
 
@@ -227,7 +247,7 @@ namespace YouTubeCSharp
 
 
             //Use of MultiCast Delegates
-            //A delegate pointing to more than 1 function is a mukticast delegate
+            //A delegate pointing to more than 1 function is a multicast delegate
         SampleDelegate del1, del2, del3, del4;
        del1 = new SampleDelegate(SampleDelegateOne);
         del2 = new SampleDelegate(SampleDelegateTwo);

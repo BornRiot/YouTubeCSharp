@@ -14,7 +14,7 @@ namespace YouTubeCSharp
             //Abstarc classes cant be  instantiated 
             //has to be inherited as base class
             //Non abstarc class has to inherit members or be marked abstract itself
-            public abstract void Print();                 
+            public abstract void Print();
 
         }
     }
